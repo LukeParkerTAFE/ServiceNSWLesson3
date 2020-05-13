@@ -58,5 +58,3 @@ let luke = createPerson("Luke", 23);
 
 console.log(luke);
 
-// ctrl + shift + `
-

@@ -14,7 +14,7 @@ me.hobbies = [
     "Skydiving",
     "Coding",
     "Eating",
-    "Excersise"
+    "Exercise"
 ];
 
 // 4 Add another property called Pets which should be an array of objects that represent your pets (make some up if you don't have any). Each pet should have 3 properties: name, age and species.
@@ -37,3 +37,22 @@ for (let i = 0; i < me.pets.length; i++) {
 
 // 5 Use string concatenation to print out a list of your hobbies in a sentence. This code should work even if you add more elements to the list. Eg. "My hobbies are painting, drawing and exercising", "My hobbies are painting, drawing, exercising and skydiving"
 
+let hobbies = "My hobbies are ";
+for (let i = 0; i < me.hobbies.length; i++) {
+    let hobby = me.hobbies[i];
+    hobbies += hobby;
+    if(i == me.hobbies.length - 2) {
+        // For the second last element
+        hobbies += " and ";
+    } else if (i == me.hobbies.length - 1){
+        // For the last element
+        hobbies += ".";
+    } else {
+        // For all the other elements
+        hobbies += ", ";
+    }
+}
+
+console.log(hobbies);
+// My hobbies are SkydivingCodingEatingExcersise
+// My hobbies are Skydiving, Coding, Eating and Excersise
