@@ -33,7 +33,13 @@ function getMe(firstName, lastName) {
 let people = [
     {
         name: "Luke",
-        age: 12
+        age: 12,
+        pets: [
+            {
+                species: "Dog",
+                name: "Rex"
+            }
+        ]
     },{
         name: "Dave",
         age: 17
