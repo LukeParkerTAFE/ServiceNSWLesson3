@@ -18,3 +18,22 @@ me.hobbies = [
 ];
 
 // 4 Add another property called Pets which should be an array of objects that represent your pets (make some up if you don't have any). Each pet should have 3 properties: name, age and species.
+me.pets = [
+    {
+        name: "Rex",
+        age: 6,
+        species: "Dog"
+    },{
+        name: "Felix",
+        age: 3,
+        species: "Cat"
+    }
+];
+
+for (let i = 0; i < me.pets.length; i++) {
+    let pet = me.pets[i];
+    console.log(`My ${pet.species} is ${pet.age} years old. Their name is ${pet.name}.`);
+}
+
+// 5 Use string concatenation to print out a list of your hobbies in a sentence. This code should work even if you add more elements to the list. Eg. "My hobbies are painting, drawing and exercising", "My hobbies are painting, drawing, exercising and skydiving"
+
