@@ -45,3 +45,18 @@ let dogs = [
     "Scooby"
 ]
 myArrayPrinter(dogs);
+
+// 4 Create a function that takes 2 arguments, name and age, and returns an object with properties name and age set to the values passed in
+function createPerson(name, age) {
+    return {
+        name: name,
+        age: age
+    }
+}
+
+let luke = createPerson("Luke", 23);
+
+console.log(luke);
+
+// ctrl + shift + `
+
